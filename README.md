@@ -173,7 +173,7 @@ pubg-map-helper/
 如有问题或建议，请通过以下方式联系：
 
 - 在 GitHub 上提交 Issue
-- 发送电子邮件至 [your-email@example.com]
+- 发送电子邮件至 [laleiuyo@gmail.com]，如果我有时间看的话
 
 ---
 
