@@ -5,6 +5,9 @@ import sanhokMapPic from '@/assets/img/maps/Sanhok_Main_High_Res.jpg';
 import vikendiMapPic from '@/assets/img/maps/Vikendi_Main_High_Res.jpg';
 import destonMapPic from '@/assets/img/maps/Deston_Main_High_Res.jpg';
 import rondoMapPic from '@/assets/img/maps/Rondo_Main_High_Res.jpg';
+import karakinMapPic from '@/assets/img/maps/Karakin_Main_High_Res.jpg';
+import paramoMapPic from '@/assets/img/maps/Paramo_Main_High_Res.jpg';
+import campMapPic from '@/assets/img/maps/Camp_Jackal_Main_High_Res.jpg';
 
 import erangelThumb from '@/assets/img/maps/thumbs/Erangel.jpg';
 import miramarThumb from '@/assets/img/maps/thumbs/Miramar.jpg';
@@ -13,6 +16,9 @@ import sanhokThumb from '@/assets/img/maps/thumbs/Sanhok.jpg';
 import vikendiThumb from '@/assets/img/maps/thumbs/Vikendi.jpg';
 import destonThumb from '@/assets/img/maps/thumbs/Deston.jpg';
 import rondoThumb from '@/assets/img/maps/thumbs/Rondo.jpg';
+import karakinThumb from '@/assets/img/maps/thumbs/Karakin.jpg';
+import paramoThumb from '@/assets/img/maps/thumbs/Paramo.jpg';
+import campThumb from '@/assets/img/maps/thumbs/Camp_Jackal.jpg';
 
 import { svgGrid } from './mapGrids';
 
@@ -23,7 +29,11 @@ export type mapNamesUnion
     | 'sanhok'
     | 'vikendi'
     | 'deston'
-    | 'rondo';
+    | 'rondo'
+    | 'karakin'
+    | 'paramo'
+    | 'camp'
+;
 
 export const mapList : Array<mapNamesUnion> = [
     'erangel',
@@ -33,6 +43,9 @@ export const mapList : Array<mapNamesUnion> = [
     'vikendi',
     'deston',
     'rondo',
+    'karakin',
+    'paramo',
+    'camp'
 ];
 
 export type mapSizes = '4x4' | '8x8';
@@ -111,6 +124,30 @@ const mapsParams: MapsParamsMap = {
         thumbnail: rondoThumb,
         grid: svgGrid["8x8"],
         defaultZoom: zoomMap["8x8"],
+    },
+    karakin: {
+        mapName: 'Karakin',
+        size: "4x4",
+        layout: karakinMapPic,
+        thumbnail: karakinThumb,
+        grid: svgGrid["4x4"],
+        defaultZoom: zoomMap["4x4"],
+    },
+    paramo: {
+        mapName: 'Paramo',
+        size: "4x4",
+        layout: paramoMapPic,
+        thumbnail: paramoThumb,
+        grid: svgGrid["4x4"],
+        defaultZoom: zoomMap["4x4"],
+    },
+    camp: {
+        mapName: 'Camp',
+        size: "4x4",
+        layout: campMapPic,
+        thumbnail: campThumb,
+        grid: svgGrid["4x4"],
+        defaultZoom: zoomMap["4x4"],
     }
 }
 

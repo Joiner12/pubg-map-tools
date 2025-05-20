@@ -20,6 +20,12 @@ export const getCnMapName = (map: string) => {
       return "帝斯顿";
     case "rondo":
       return "荣都";
+    case "karakin":
+      return "卡拉金";
+    case "paramo":
+      return "帕拉莫";
+    case "camp":
+      return "训练场";
     default:
       return map;
   }
