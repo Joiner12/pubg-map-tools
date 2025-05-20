@@ -1,7 +1,7 @@
 <script setup>
 import MapCard from "@/components/MapCard.vue";
 import { getThumbnails } from '@/libs/mapsParams';
-import bgImg from '@/assets/img/pubg-bg.jpg';
+// import bgImg from '@/assets/img/pubg-bg.jpg';
 import { onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useMapStore } from '@/stores/map';
@@ -9,7 +9,7 @@ import { getCnMapName } from '@/libs/utils';
 
 const router = useRouter();
 const mapStore = useMapStore();
-const bgimg = `url(${bgImg})`;
+// const bgimg = `url(${bgImg})`;
 const maps = getThumbnails();
 
 const navigateTo = (path) => {
@@ -34,7 +34,7 @@ onMounted(() => {
 .main {
   height: calc(100% - 60px);
   background-color: rgb(247, 244, 242);
-  background-image: v-bind(bgimg);
+  /* background-image: v-bind(bgimg); */
   background-size: cover;
   background-position: top;
   filter: brightness(0.9);

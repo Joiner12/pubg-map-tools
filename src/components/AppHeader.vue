@@ -107,7 +107,7 @@ onUnmounted(() => {
 .header {
   position: relative;
   height: 60px;
-  background-color: #1a1a1a;
+  background-color: #ececec;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 100;
@@ -150,7 +150,7 @@ onUnmounted(() => {
 .logo-title {
   margin-left: 8px;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
 }
 
 .nav-menu {
@@ -162,17 +162,17 @@ onUnmounted(() => {
 
 .nav-item {
   position: relative;
-  padding: 8px 16px;
-  font-size: 16px;
+  padding: 8px 14px;
+  font-size: 14px;
   font-weight: 500;
-  color: #cccccc;
+  color: #383434;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 .nav-item:hover {
-  color: #ffffff;
+  color: #383737;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -271,7 +271,7 @@ onUnmounted(() => {
   }
 
   .nav-item.active {
-    background-color: rgba(255, 204, 0, 0.1);
+    background-color: rgba(231, 229, 222, 0.1);
   }
 }
 </style>

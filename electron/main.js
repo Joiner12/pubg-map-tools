@@ -3,10 +3,8 @@ const path = require('path')
 const { Menu } = require('electron')
 function createWindow() {
     const mainWindow = new BrowserWindow({
-        width:440,
-        height: 694,
-        // width: 1200,
-        // height: 800,
+        width: 951,
+        height: 577,
         webPreferences: {
             nodeIntegration: true, // 允许 Node.js 环境
         },
