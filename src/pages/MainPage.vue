@@ -33,7 +33,7 @@ onMounted(() => {
 <style scoped>
 .main {
   height: calc(100% - 60px);
-  background-color: black;
+  background-color: rgb(247, 244, 242);
   background-image: v-bind(bgimg);
   background-size: cover;
   background-position: top;

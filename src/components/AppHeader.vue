@@ -75,10 +75,10 @@ onUnmounted(() => {
   <header class="header">
     <div class="header-container">
       <div class="logo" @click="navigateTo('/')">
-        <span class="logo-bracket">[</span>
+        <!-- <span class="logo-bracket">[</span> -->
         <span class="logo-text">PUBG</span>
-        <span class="logo-bracket">]</span>
-        <span class="logo-title">地图小助手</span>
+        <!-- <span class="logo-bracket">]</span> -->
+        <span class="logo-title">地图助手</span>
       </div>
 
       <div class="mobile-menu-toggle" @click="toggleMobileMenu">

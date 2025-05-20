@@ -2,13 +2,24 @@
   "name": "pubg-map-helper",
   "version": "1.0.2",
   "private": true,
+  "main": "electron/main.js",
+  "build": {
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "icon": "public/app-icon_32x32.ico"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "electron:dev": "vite build && electron .",
+    "electron:build": "electron-builder"
   },
   "dependencies": {
     "pinia": "^3.0.1",
@@ -23,12 +34,16 @@
     "@vue/eslint-config-prettier": "^10.2.0",
     "@vue/eslint-config-typescript": "^14.4.0",
     "@vue/tsconfig": "^0.7.0",
+    "electron": "^36.2.1",
+    "electron-builder": "^26.0.12",
     "eslint": "^9.21.0",
     "eslint-plugin-vue": "^9.32.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.5.3",
     "typescript": "^5.8.2",
     "vite": "^6.2.0",
+    "vite-plugin-electron": "^0.29.0",
+    "vite-plugin-singlefile": "^2.2.0",
     "vue-tsc": "^2.2.8"
   }
 }
