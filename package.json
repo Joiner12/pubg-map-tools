@@ -1,14 +1,36 @@
 {
   "name": "pubg-map-helper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "main": "electron/main.js",
   "build": {
+    "appId":"pubg-map-helper.com",
+    "productName": "pubg-map-helper",
+    "copyright": "Copyright © 2025",
     "directories": {
       "output": "release"
     },
     "win": {
+      "target":[
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
       "icon": "public/app-icon_32x32.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerHeaderIcon": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pubg Map Helper",
+      "deleteAppDataOnUninstall": false,
+      "license": "LICENSE",
+      "runAfterFinish": false
     }
   },
   "scripts": {
